@@ -1,0 +1,13 @@
+{
+  "short_name": "Temperature",
+  "name": "Temperature logger",
+  "display": "fullscreen",
+  "manifest_version": 2,
+
+  "icons": [
+    {
+      "src": "media/logo.svg",
+      "sizes": "any"
+    }
+  ]
+}
