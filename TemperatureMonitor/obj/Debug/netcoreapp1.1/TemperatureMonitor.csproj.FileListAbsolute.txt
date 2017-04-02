@@ -1,0 +1,9 @@
+D:\Github\TemperatureMonitor\TemperatureMonitor\bin\Debug\netcoreapp1.1\TemperatureMonitor.deps.json
+D:\Github\TemperatureMonitor\TemperatureMonitor\bin\Debug\netcoreapp1.1\TemperatureMonitor.runtimeconfig.json
+D:\Github\TemperatureMonitor\TemperatureMonitor\bin\Debug\netcoreapp1.1\TemperatureMonitor.runtimeconfig.dev.json
+D:\Github\TemperatureMonitor\TemperatureMonitor\bin\Debug\netcoreapp1.1\TemperatureMonitor.dll
+D:\Github\TemperatureMonitor\TemperatureMonitor\bin\Debug\netcoreapp1.1\TemperatureMonitor.pdb
+D:\Github\TemperatureMonitor\TemperatureMonitor\obj\Debug\netcoreapp1.1\TemperatureMonitor.csprojResolveAssemblyReference.cache
+D:\Github\TemperatureMonitor\TemperatureMonitor\obj\Debug\netcoreapp1.1\TemperatureMonitor.AssemblyInfo.cs
+D:\Github\TemperatureMonitor\TemperatureMonitor\obj\Debug\netcoreapp1.1\TemperatureMonitor.dll
+D:\Github\TemperatureMonitor\TemperatureMonitor\obj\Debug\netcoreapp1.1\TemperatureMonitor.pdb
