@@ -37,6 +37,7 @@ namespace TemperatureMonitor
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
+            app.UseWebSockets();
             app.UseDefaultFiles();
             app.Use(async (context, next) =>
             {
