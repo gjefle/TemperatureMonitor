@@ -7,3 +7,5 @@ D:\Github\TemperatureMonitor\TemperatureMonitor\obj\Debug\netcoreapp1.1\Temperat
 D:\Github\TemperatureMonitor\TemperatureMonitor\obj\Debug\netcoreapp1.1\TemperatureMonitor.dll
 D:\Github\TemperatureMonitor\TemperatureMonitor\obj\Debug\netcoreapp1.1\TemperatureMonitor.pdb
 D:\Github\TemperatureMonitor\TemperatureMonitor\obj\Debug\netcoreapp1.1\TemperatureMonitor.csprojResolveAssemblyReference.cache
+D:\Github\TemperatureMonitor\TemperatureMonitor\bin\Debug\netcoreapp1.1\WebSocketManager.dll
+D:\Github\TemperatureMonitor\TemperatureMonitor\bin\Debug\netcoreapp1.1\WebSocketManager.pdb

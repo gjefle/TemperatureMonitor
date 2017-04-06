@@ -1,0 +1,7 @@
+D:\Github\TemperatureMonitor\WebSocketManager\bin\Debug\netcoreapp1.1\WebSocketManager.deps.json
+D:\Github\TemperatureMonitor\WebSocketManager\bin\Debug\netcoreapp1.1\WebSocketManager.dll
+D:\Github\TemperatureMonitor\WebSocketManager\obj\Debug\netcoreapp1.1\WebSocketManager.csprojResolveAssemblyReference.cache
+D:\Github\TemperatureMonitor\WebSocketManager\obj\Debug\netcoreapp1.1\WebSocketManager.AssemblyInfo.cs
+D:\Github\TemperatureMonitor\WebSocketManager\bin\Debug\netcoreapp1.1\WebSocketManager.pdb
+D:\Github\TemperatureMonitor\WebSocketManager\obj\Debug\netcoreapp1.1\WebSocketManager.dll
+D:\Github\TemperatureMonitor\WebSocketManager\obj\Debug\netcoreapp1.1\WebSocketManager.pdb
