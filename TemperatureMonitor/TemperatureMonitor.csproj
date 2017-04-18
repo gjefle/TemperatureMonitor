@@ -6,13 +6,25 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="refs\**" />
+    <Compile Remove="temperature-app\node_modules\**" />
+    <Content Remove="refs\**" />
+    <Content Remove="temperature-app\node_modules\**" />
+    <EmbeddedResource Remove="refs\**" />
+    <EmbeddedResource Remove="temperature-app\node_modules\**" />
+    <None Remove="refs\**" />
+    <None Remove="temperature-app\node_modules\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="temperature-app\src\tsconfig.app.json" />
+    <Content Remove="temperature-app\src\tsconfig.spec.json" />
     <Content Remove="wwwroot/app\main.js.map" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Include="wwwroot\index.html" />
     <Content Include="wwwroot\manifest.json" />
-    <Content Include="wwwroot\media\logo.svg" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.0.0" />
@@ -20,13 +32,23 @@
     <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="1.1.2" />
     <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="1.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.WebSockets" Version="1.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="1.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="1.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="1.1.1" />
     <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="1.1.1" />
+    <PackageReference Include="WebSocketManager" Version="1.0.1" />
+    <PackageReference Include="WebSocketManager.Common" Version="1.0.0" />
   </ItemGroup>
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="1.0.0" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\WebSocketManager\WebSocketManager.csproj" />
+    <DotNetCliToolReference Include="Microsoft.DotNet.Watcher.Tools" Version="1.0.0" />
+    <DotNetCliToolReference Include="Microsoft.Extensions.SecretManager.Tools" Version="1.0.0" />
+    <DotNetCliToolReference Include="Microsoft.Extensions.Caching.SqlConfig.Tools" Version="1.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="temperature-app\src\app\data\" />
   </ItemGroup>
 
 </Project>

@@ -7,9 +7,11 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using TemperatureMonitor.Data;
 using WebSocketManager;
 
 namespace TemperatureMonitor
@@ -35,6 +37,7 @@ namespace TemperatureMonitor
             app.UseWebSockets();
             app.MapWebSocketManager("/temperature", serviceProvider.GetService<TemperatureChangeHandler>());
             app.UseDefaultFiles();
+            app.UseMvc();
             //app.Use(async (context, next) =>
             //{
             //    await next();
@@ -47,13 +50,21 @@ namespace TemperatureMonitor
             //    }
             //});
             app.UseStaticFiles();
-            //app.UseMvc();
         }
         public void ConfigureServices(IServiceCollection services)
         {
-            //services.AddMvc();
+           
             services.AddWebSocketManager();
+            services.AddDbContext<PlantContext>(options =>
+            {
+                options.UseSqlServer(Configuration.GetConnectionString("PlantDatabase"));
+            });
+            services.AddScoped<PlantContext>();
+            services.AddMvc();
+
+
         }
 
     }
 }
+

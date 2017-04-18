@@ -1,3 +1,5 @@
 ﻿/temperature-app/
 /TemperatureMonitor/node_modules
 node_modules/ 
+/TemperatureMonitor/obj
+/TemperatureMonitor/bin
