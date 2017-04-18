@@ -1,0 +1,10 @@
+﻿<div *ngIf="temperature">
+  <select name="unit" [(ngModel)]="selectedUnit">
+    <option [value]="units.Celsius">Celsius</option>
+    <option [value]="units.Kelvin">Kelvin</option>
+    <option [value]="units.Fahrenheit">Fahrenheit</option>
+  </select>
+  <div class="temperature-value">
+    {{temperature.value | unitConvert: selectedUnit | number: '1.1-1'}} {{unitShort}}
+  </div>
+</div>
