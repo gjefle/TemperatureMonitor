@@ -1,1 +1,82 @@
-/* You can add global styles to this file, and also import other style files */
+﻿/* You can add global styles to this file, and also import other style files */
+body {
+  background-color: #edfcff
+}
+
+.container {
+  padding: 15px;
+  margin-left: 20%;
+  margin-right: 20%;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  background-color: rgb(250, 250, 250);
+}
+
+
+
+.text-normal {
+  font-family: Arial, Helvetica;
+  color: #24393f;
+}
+
+.text-info {
+  font-family: Arial,Helvetica;
+  font-size: 15px;
+}
+
+.text-info, label {
+    font-weight: bold;
+    font-size: 17px;
+    
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+    flex-wrap: wrap;
+  justify-content: space-around;
+}
+.sm-margin {
+    margin: 5px;
+
+}
+.select-menu {
+  flex: 1 auto;
+    padding: 5px;
+}
+.select-menu-item {
+    padding: 5px;
+    cursor: pointer;
+}
+.select-menu-item:hover {
+    transform: scale(1.02)
+}
+.temperature-container {
+  flex: 1 auto;
+    max-width: 610px;
+  border: 1px solid rgba(191, 191, 191, 0.6);
+  border-radius: 3px;
+  padding: 10px;
+}
+
+@media (max-width: 1199px) and (min-width: 600px) {
+  .container {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 599px) {
+  .container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .select-menu {
+    flex: 1 100%;
+  }
+
+  .temperature-container {
+    flex: 1 100%;
+  }
+}

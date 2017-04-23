@@ -1,10 +1,22 @@
-﻿<div *ngIf="temperature">
-  <select name="unit" [(ngModel)]="selectedUnit">
+﻿<div class="sm-margin">
+  <span class="text-info">{{logger.name}}</span>
+
+  <select class="sm-margin" name="unit" [(ngModel)]="selectedUnit">
     <option [value]="units.Celsius">Celsius</option>
-    <option [value]="units.Kelvin">Kelvin</option>
     <option [value]="units.Fahrenheit">Fahrenheit</option>
+    <option [value]="units.Kelvin">Kelvin</option>
   </select>
-  <div class="temperature-value">
-    {{temperature.value | unitConvert: selectedUnit | number: '1.1-1'}} {{unitShort}}
+  <div style="display: flex; justify-content: space-between">
+    <span class="sm-margin"><label>Average: </label>{{logger.celsiusAverage | unitConvert: selectedUnit | number: '1.1-1'}} {{unitShort}}</span>
+    <span class="sm-margin"><label>Min:</label>{{logger.celsiusMin | unitConvert: selectedUnit | number: '1.1-1'}} {{unitShort}}</span>
+    <span class="sm-margin"> <label>Max: </label> {{logger.celsiusMax | unitConvert: selectedUnit | number: '1.1-1'}} {{unitShort}}</span>
   </div>
+  <hr />
+  <div>
+      <chart [options]="options" (load)="saveInstance($event.context)"></chart>
+    <!--<div class="temperature-value" *ngFor="let temperature of temperatures">
+      {{temperature.value | unitConvert: selectedUnit | number: '1.1-1'}} {{unitShort}}
+    </div>-->
+  </div>
+
 </div>

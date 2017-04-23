@@ -12,11 +12,14 @@ export class DataListenerService {
     }
     onOpen = (evt: Event) => {
         console.log("Socket opened");
+
         this.socket.send("Hei");
+        
     }
 
-    onMessage = (msg: MessageEvent) => {
-        console.log(msg);
+    onMessage = (event: MessageEvent) => {
+        var msg = JSON.parse(event.data);
+        console.log();
     }
 
     subscribe() {

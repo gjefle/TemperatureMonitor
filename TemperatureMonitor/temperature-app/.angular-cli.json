@@ -1,4 +1,4 @@
-{
+﻿{
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
     "name": "temperature-app"
@@ -6,7 +6,7 @@
   "apps": [
     {
       "root": "src",
-      "outDir": "dist",
+      "outDir": "./dist",
       "assets": [
         "assets",
         "favicon.ico"
@@ -50,7 +50,7 @@
       "config": "./karma.conf.js"
     }
   },
-  "defaults": {
+  "defaults": {    
     "styleExt": "css",
     "component": {}
   }

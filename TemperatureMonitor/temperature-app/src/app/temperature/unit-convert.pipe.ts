@@ -1,9 +1,10 @@
 ﻿import { Pipe, PipeTransform } from '@angular/core';
-import { TemperatureUnits } from "app/domain/enums/temperature-units";
+import { TemperatureUnits } from '../../app/domain/enums/temperature-units';
 
 @Pipe({
     name: 'unitConvert',
     pure: false
+
 })
 export class UnitConvertPipe implements PipeTransform {
     transform(value: any, unit: TemperatureUnits): any {

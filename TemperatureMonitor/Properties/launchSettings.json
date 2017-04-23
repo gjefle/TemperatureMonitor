@@ -17,12 +17,12 @@
     },
     "TemperatureMonitor": {
       "commandName": "Project",
-      "launchBrowser": true,
+      "launchBrowser": false,
       "launchUrl": "api/Plant",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
-      "applicationUrl": "http://localhost:55054"
+      "applicationUrl": "http://localhost:5000"
     }
   }
 }

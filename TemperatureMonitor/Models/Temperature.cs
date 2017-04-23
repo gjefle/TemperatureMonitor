@@ -9,8 +9,9 @@ namespace TemperatureMonitor.Models
     public class Temperature
     {
         public int TemperatureId { get; set; }
-        public double Value { get; set; }
-        public DateTime LogDate{ get; set; }
+        public double Celsius { get; set; }
+        public double Fahrenheit { get; set; }
+        public DateTimeOffset LogDate{ get; set; }
 
         public int LoggerId { get; set; }
         public Logger Logger { get; set; }

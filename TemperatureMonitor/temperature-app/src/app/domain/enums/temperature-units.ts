@@ -1,7 +1,7 @@
 ﻿
 export enum TemperatureUnits {
     Celsius,
-    Kelvin,
-    Fahrenheit
+    Fahrenheit,
+    Kelvin
 }
 

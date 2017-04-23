@@ -12,7 +12,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using TemperatureMonitor.Data;
-using WebSocketManager;
+//using TemperatureMonitor.WebSocketData;
 
 namespace TemperatureMonitor
 {
@@ -34,27 +34,15 @@ namespace TemperatureMonitor
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
-            app.UseWebSockets();
-            app.MapWebSocketManager("/temperature", serviceProvider.GetService<TemperatureChangeHandler>());
+            //app.UseWebSockets();
             app.UseDefaultFiles();
             app.UseMvc();
-            //app.Use(async (context, next) =>
-            //{
-            //    await next();
-
-            //    if (context.Response.StatusCode == 404
-            //        && !Path.HasExtension(context.Request.Path.Value))
-            //    {
-            //        context.Request.Path = "/index.html";
-            //        await next();
-            //    }
-            //});
             app.UseStaticFiles();
         }
         public void ConfigureServices(IServiceCollection services)
         {
            
-            services.AddWebSocketManager();
+            //services.AddWebSocketManager();
             services.AddDbContext<PlantContext>(options =>
             {
                 options.UseSqlServer(Configuration.GetConnectionString("PlantDatabase"));
