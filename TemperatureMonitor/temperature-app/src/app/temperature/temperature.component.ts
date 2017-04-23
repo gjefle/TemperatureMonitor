@@ -73,6 +73,9 @@ export class TemperatureComponent implements OnInit {
         });
         this.chart.series[0].setData(data, true);
     }
+    reloadData() {
+        this.getTemperatures();
+    }
     setOptions() {
         this.options = {
             xAxis: {

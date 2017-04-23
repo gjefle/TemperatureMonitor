@@ -45,13 +45,5 @@ export class AppComponent {
         //    this.temperatures.concat(temperatures);
         //});
     }
-    
-  
-    //temperatures(logger: Logger) {
-    //    return this.ctx.temperatures;
-    //    //return [
-    //    //    new Temperature(22, new Date()),
-    //    //    new Temperature(21, new Date())
-    //    //];
-    //}
+ 
 }

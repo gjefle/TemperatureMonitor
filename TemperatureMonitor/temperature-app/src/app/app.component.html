@@ -11,7 +11,9 @@
             {{logger.name}}
           </div>    
         </div>
-        <app-temperature class="temperature-container" *ngIf="selectedLogger" [logger]="selectedLogger"></app-temperature>
+        <app-temperature class="temperature-container" 
+                         *ngIf="selectedLogger" 
+                         [logger]="selectedLogger"></app-temperature>
     </div>
 
 

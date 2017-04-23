@@ -25,35 +25,38 @@ body {
 }
 
 .text-info, label {
-    font-weight: bold;
-    font-size: 17px;
-    
+  font-weight: bold;
+  font-size: 17px;
 }
 
 .content {
   display: flex;
   flex-direction: row;
-    flex-wrap: wrap;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
-.sm-margin {
-    margin: 5px;
 
+.sm-margin {
+  margin: 5px;
 }
+
 .select-menu {
   flex: 1 auto;
-    padding: 5px;
+  padding: 5px;
 }
+
 .select-menu-item {
-    padding: 5px;
-    cursor: pointer;
+  padding: 5px;
+  cursor: pointer;
 }
-.select-menu-item:hover {
+
+  .select-menu-item:hover {
     transform: scale(1.02)
-}
+  }
+
 .temperature-container {
   flex: 1 auto;
-    max-width: 610px;
+  max-width: 610px;
   border: 1px solid rgba(191, 191, 191, 0.6);
   border-radius: 3px;
   padding: 10px;
@@ -79,4 +82,13 @@ body {
   .temperature-container {
     flex: 1 100%;
   }
+}
+
+.refresh-button {
+  background-color: #edfcff !important;
+  border: none;
+  padding: 5px;
+  font-weight: 500;
+  margin: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
